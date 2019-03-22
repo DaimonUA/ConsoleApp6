@@ -28,7 +28,7 @@ using System.Collections.Generic;
 //| строка_2        | строка_2_обр        |
 //+-----------------+---------------------+
 
-namespace ConsoleHomeWork.CollectionAndStrings
+namespace HomeWork.CollectionAndStrings
 {
     class Program
     {
