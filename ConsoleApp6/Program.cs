@@ -125,7 +125,7 @@ namespace HomeWork.CollectionAndStrings
             }
             return res;
         }
-        static void ModifyString(ref string str1,ref string str2, (int x, int y)maxPaire)
+        private static void ModifyString(ref string str1,ref string str2, (int x, int y)maxPaire)
         {
             ModifyString(ref str1, maxPaire.x);
             ModifyString(ref str2, maxPaire.y);
@@ -133,9 +133,9 @@ namespace HomeWork.CollectionAndStrings
 
         private static void ModifyString(ref string str, int x)
         {
-            for (int i = str.Length+1; i<=x; i++)
+            if (x > str.Length + 1)
             {
-                str += " ";
+                str += new string(' ', x - str.Length);
             }
         }
     }
